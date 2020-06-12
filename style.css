@@ -1,0 +1,215 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: Arial, Helvetica, sans-serif;
+}
+.container{
+    width: 100%;
+    
+}
+.header{
+    margin: 30px 15px;
+}
+.header .container>div{
+    float: left;
+    display: flex;
+
+}
+.header .container div:last-child{
+    float: none;
+}
+.header-left{
+    width: 33.33%;
+    text-overflow: ellipsis;
+    text-overflow: clip;
+    white-space: nowrap;
+    overflow: hidden;
+}
+.header-left ul li{
+    display: inline-block;
+    list-style-type: none;
+    padding: 10px 10px;
+    font-size: 35px;
+}
+.header-left ul li a{
+    color:black ;
+    text-decoration: none;
+}
+.header-left ul li img{
+    width: 30px;
+    margin-right: 10px;
+}
+.header-center{
+    width: 33.33%;
+    text-align:center ;
+}
+.header-center div {
+    width: 50px;
+    height: 50px;
+    text-align: center;
+    margin: auto;
+
+}
+.header-center div a img {
+    width: 100%;
+}
+.header-right{
+    width: 33.33%;
+    text-align: end;
+}
+.search{
+    position: relative;
+}
+.search img{
+    width: 25px;
+    height: 25px;
+    position: absolute;
+    top: 10px;
+    left: 16px;
+}
+.search input{
+    background-color: #ffebeb;
+    border-radius: 15px;
+    padding: 12px 60px;
+    border: none;
+    font-size: 20px;
+
+}
+.search input:focus{
+    outline: none;
+}
+
+.header-right i input:focus{
+    outline: none;
+  }
+
+.header-right button{
+    padding: 8px 20px;
+    background-color: #30d9b8;
+    border-radius: 15px;
+    color: white;
+    border: none;
+    cursor: pointer;
+    text-transform: uppercase;
+    font-weight: 600;
+}
+.header-right button:focus{
+  outline: none;
+}
+.header-right button:nth-of-type(1){
+    background: #efe8e8;
+    color: black;
+    margin: 0px 15px;
+
+}
+.main-header{
+    width: 100%;
+    background-color: #96f7e3;
+}
+.title-header{
+    margin: 30px 0 0 0;
+    padding: 70px 0;
+
+}
+.title-header h1{
+    text-align: center;
+    float: left;
+    width: 90%;
+    padding-left: 150px;
+}
+.title-header span{
+    width: 10%;
+    float: left;
+    display: block;
+    padding: 10px;
+
+}
+.title-header span a{
+    color: black;
+    text-decoration: none;
+    font-size: 25px;
+
+}
+.header-filter{
+    width: 100%;
+}
+.filter{
+    border: 1px solid black;
+    text-align: center;
+    padding: 20px 0;
+    width: calc(100% / 3);
+    float: left;
+    font-size: 25px;
+    text-overflow: ellipsis;
+    white-space: nowrap;
+    overflow: hidden;
+}
+.filter span{
+    font-weight:600 ;
+}
+.category{
+    margin: 30px 0 0 30px;
+}
+.category li{
+    display: inline-block;
+    list-style-type: none;
+    margin-right: 15px;
+    
+}
+.category li a{
+   text-decoration: none;
+   color: black;
+   font-size: 18px;
+}
+.product li{
+    list-style-type: none;
+    display: block;
+    width: calc(90% / 3);
+    margin: 15px calc(10%/6);
+    float: left;
+}
+
+.product li a{
+    text-decoration: none;
+    color: black;
+}
+.product >li> a >div{
+ 
+    position: relative;
+}
+.product li a div img{
+    width: 100%;
+    background-size: cover;
+}
+.product >li> a > div> span{
+    position: absolute;
+    display: block;
+    top: 0;
+    right: 0;
+    padding: 20px 30px;
+    font-size: 18px;
+    color: white;
+    background-color: #2fdab9;
+}
+.viewers{
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    display: flex;
+    align-items: center;
+}
+.viewers div{
+    width: 50px;
+    height: 50px;
+    padding: 5px;
+    border-radius: 50%;
+}
+.viewers div img{
+   width: 100%;
+   background-size: cover;
+
+}
+.clearfix{
+    clear: both;
+}
